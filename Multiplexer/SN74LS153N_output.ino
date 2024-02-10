@@ -24,21 +24,25 @@ void setup() {
 }
 
 void loop() {
-  digitalWrite(A,0);
+  //Push button 1
+  digitalWrite(A,0);  //A is index 0, B is index 1
   digitalWrite(B,0);
   Serial.print(digitalRead(Y));
   Serial.print(" ");
 
+  //Push button 2
   digitalWrite(A,1);
   digitalWrite(B,0);
   Serial.print(digitalRead(Y));
   Serial.print(" ");
   
+  //Push button 3
   digitalWrite(A,0);
   digitalWrite(B,1);
   Serial.print(digitalRead(Y));
   Serial.print(" ");
 
+  //Push button 4
   digitalWrite(A,1);
   digitalWrite(B,1);
   Serial.println(digitalRead(Y)); 
